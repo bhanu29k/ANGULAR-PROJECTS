@@ -1,0 +1,14 @@
+{
+    "/api/*": {
+      "target": "http://192.168.252.43:8765/seeker-registration/*",
+      "secure": false,
+      "changeOrigin": true,
+      "logLevel": "debug"
+    },
+    "/job-application/*": {
+        "target": "http://192.168.252.43:8765/job-application/*",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug"
+      }
+  }

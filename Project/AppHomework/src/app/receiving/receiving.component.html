@@ -1,0 +1,33 @@
+<br><br><br><br>
+<div class="four wide column center aligned votes"> 
+  <div class="ui statistic"> 
+  <div class="value"> 
+  {{ AppDetail1.votes }} 
+  </div>
+ <div class="label">
+    Points 
+  </div> 
+</div> 
+ </div>
+<div class="twelve wide column"> 
+  <button class="ui large header" >
+     {{ AppDetail1.title }} 
+  </button> <br>
+  <button class="ui large header" >
+    {{ AppDetail1.link }} 
+ </button> 
+      <ul class="ui big horizontal list voters"> 
+         <li class="item"> 
+            <button (click)="UpVote()"> 
+            <i class="arrow up icon"></i> 
+            upvote 
+            </button> 
+           </li> 
+            <li class="item"> 
+               <button  (click)="DownVote()"> 
+                  <i class="arrow down icon"></i> 
+                   downvote 
+               </button>
+   </li> 
+  </ul>
+ </div>

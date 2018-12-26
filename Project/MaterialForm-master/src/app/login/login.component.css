@@ -1,0 +1,39 @@
+.conatiner{
+    content: '';
+    display: inline;
+   
+    padding: 0;
+    background: grey;
+}
+
+.mat-tab-nav-bar{
+  margin: 5em 20em;
+  width:20em;
+}
+
+.mat-card{
+    width: 20em;
+    margin: 30em 20em;
+    background:rgb(116, 111, 111);
+    
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+.error {
+  color: red;
+}
+.error-msg {
+  display: block;
+  position: absolute;
+  font-size: 75%;
+  bottom: -2em;
+}
+.mat-form-field {
+  margin-bottom: .5em;
+}
+
+
+
+

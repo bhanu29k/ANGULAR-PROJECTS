@@ -1,0 +1,8 @@
+<div *ngIf="ename == 'bhanu'">Employee name is {{ename}}</div>
+<div *ngIf="ename=='ishanya'">Employee name is {{ename}}</div>
+<div *ngIf="ename!='bhanu' && ename!='ishanya'">Employee name is {{ename}}</div>
+<div [ngSwitch]="salary">
+<div *ngSwitchCase="'30000'">Salary is {{salary}}</div>
+<div *ngSwitchCase="'20000'">Salary is {{salary}}</div>
+<div *ngSwitchDefault>Salary is not defined</div>
+</div>

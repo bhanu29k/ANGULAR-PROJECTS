@@ -1,0 +1,15 @@
+<h2>Form Validation</h2>
+
+<form #f="ngForm">
+  Name :  <input type="text" name="name"  #name="ngModel" [(ngModel)]="ename" class="form-control" minlength="4" maxlength="12" appForbiddenName="Shikari" required><br><br>
+  <div *ngIf="name.invalid && (name.touched || name.dirty)">
+    <div *ngIf="name.errors.required">Name is required</div>
+    <div *ngIf="name.errors.minlength">Name must be min 4 characters long</div>
+    <div *ngIf="name.errors.maxlength">Name can't be greater than 12 characters</div>
+    <div *ngIf="name.errors.forbiddenName">Name can't be Shikari</div> 
+</div>   
+  Email:  <input type="text" name="email" [(ngModel)]="email"><br>
+  <input type="submit" value="submit" name="submit">
+  {{f.value | json }} 
+</form>
+   

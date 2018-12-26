@@ -1,0 +1,12 @@
+<fieldset style="background-color: lightblue; ">
+  <form class="ui large form segment">
+    Title:<br>
+    <input type='text' name="title" #tit><br><br>
+    Link: <br>
+    <input type='text' name="link" #li><br>
+    <button (click)="onclic(tit,li)" class="ui positive right floated button">Submit link</button>
+    </form>
+  </fieldset>
+  <div *ngFor="let AppDetl of AppDetail">
+    <app-receiving  [AppDetail1]="AppDetl"></app-receiving>
+  </div>
